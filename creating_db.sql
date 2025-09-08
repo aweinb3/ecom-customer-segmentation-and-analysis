@@ -48,4 +48,4 @@ ALTER TABLE sales
 ADD COLUMN profit NUMERIC(10,2);
 
 UPDATE sales
-SET profit = revenue - cogs;
+SET profit = revenue - (cogs * quantity);
